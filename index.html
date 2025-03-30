@@ -26,69 +26,6 @@
 
 <style>
 /* General body background with new gradient */
-
-/* Responsive layout and element stacking adjustments */
-@media (max-width: 768px) {
-  .slider-item .container .row {
-    flex-direction: column-reverse;
-  }
-
-  .one-forth,
-  .one-third {
-    width: 100% !important;
-    display: block;
-  }
-
-  .text {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .btn {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .img-about,
-  .img-about img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .heading-section h1,
-  .heading-section h2,
-  .boxed-heading {
-    font-size: 22px !important;
-    text-align: center;
-  }
-
-  .blog-entry {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .blog-entry .text {
-    text-align: center;
-  }
-
-  .resume-wrap {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .contact-info .box {
-    margin-bottom: 20px;
-  }
-
-  .footer-olive ul {
-    flex-direction: column;
-  }
-
-  .footer-olive li {
-    margin: 10px 0;
-  }
-}
-
 body {
     background: linear-gradient(to bottom, #ffffff, #ececec, #cbcbcb); /* White to blue gradient */
     color: #3e1b1b;
@@ -285,23 +222,30 @@ body {
   letter-spacing: 1px;
 }
 
-@media (max-width: 1024px) {
-  .js-fullheight.img {
-    background-image: none !important;
-  }
+body.small-screen {
+  font-size: 12px;
 }
 
-.ftco-hireme {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+body.medium-screen {
+  font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .ftco-hireme {
-    background-size: contain;
-    background-position: center top;
-  }
+body.large-screen {
+  font-size: 16px;
+}
+
+body.small-screen .container,
+body.small-screen .text,
+body.small-screen .btn,
+body.small-screen .boxed-heading {
+  padding: 10px !important;
+  margin: 5px 0;
+  text-align: center !important;
+}
+
+body.medium-screen .container {
+  max-width: 90%;
+  margin: auto;
 }
 </style>
 </head>
@@ -812,5 +756,23 @@ body {
   
   <script src="js/main.js"></script>
     
-  </body>
+  
+<script>
+  function updateLayoutClass() {
+    const width = window.innerWidth;
+    document.body.classList.remove('small-screen', 'medium-screen', 'large-screen');
+
+    if (width <= 400) {
+      document.body.classList.add('small-screen');
+    } else if (width <= 1024) {
+      document.body.classList.add('medium-screen');
+    } else {
+      document.body.classList.add('large-screen');
+    }
+  }
+
+  window.addEventListener('resize', updateLayoutClass);
+  window.addEventListener('load', updateLayoutClass);
+</script>
+</body>
 </html>
