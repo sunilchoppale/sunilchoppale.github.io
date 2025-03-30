@@ -26,6 +26,69 @@
 
 <style>
 /* General body background with new gradient */
+
+/* Responsive layout and element stacking adjustments */
+@media (max-width: 768px) {
+  .slider-item .container .row {
+    flex-direction: column-reverse;
+  }
+
+  .one-forth,
+  .one-third {
+    width: 100% !important;
+    display: block;
+  }
+
+  .text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .img-about,
+  .img-about img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .heading-section h1,
+  .heading-section h2,
+  .boxed-heading {
+    font-size: 22px !important;
+    text-align: center;
+  }
+
+  .blog-entry {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-entry .text {
+    text-align: center;
+  }
+
+  .resume-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-info .box {
+    margin-bottom: 20px;
+  }
+
+  .footer-olive ul {
+    flex-direction: column;
+  }
+
+  .footer-olive li {
+    margin: 10px 0;
+  }
+}
+
 body {
     background: linear-gradient(to bottom, #ffffff, #ececec, #cbcbcb); /* White to blue gradient */
     color: #3e1b1b;
