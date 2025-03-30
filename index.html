@@ -247,6 +247,16 @@ body.medium-screen .container {
   max-width: 90%;
   margin: auto;
 }
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -273,7 +283,7 @@ body.medium-screen .container {
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<div class="one-third js-fullheight order-md-last img" style="background-image:url('images/abcde.gif'); background-size: 600px 600px; background-position: center 10%; background-repeat: no-repeat;">
+				<div class="one-third js-fullheight order-md-last img desktop-only" style="background-image:url('images/abcde.gif'); background-size: 600px 600px; background-position: center 10%; background-repeat: no-repeat;">
 	          	  <div class="centered-text">GDP</div>
 				  <div class="overlay"></div>
 	          	</div>
