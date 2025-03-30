@@ -124,6 +124,103 @@ body {
         font-weight: bold; /* Bold text */
         z-index: 2; /* Ensure it's above the background image */
 }
+@media (max-width: 768px) {
+  .one-third.js-fullheight.order-md-last.img {
+    background-size: cover !important;
+    background-position: center center !important;
+    height: 300px !important;
+  }
+
+  .centered-text {
+    top: 40% !important;
+    font-size: 18px !important;
+  }
+
+  #typing-animation {
+    font-size: 18px !important;
+    white-space: normal;
+  }
+
+  .about-mf .box-shadow-full {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .img-about img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about-info li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-mf .progress {
+    height: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .slider-text .text h1 {
+    font-size: 26px !important;
+  }
+
+  .blog-entry .text h3 {
+    font-size: 16px;
+  }
+
+  .resume-wrap {
+    margin-bottom: 20px;
+  }
+
+  .contact-info .box {
+    margin-bottom: 20px;
+  }
+
+  .counter-wrap {
+    margin-bottom: 20px;
+  }
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.boxed-heading {
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+  font-weight: normal;
+}
+.footer-olive {
+  background-color: #b8b88aa8;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 1px;
+}
 </style>
 </head>
 <body>
@@ -132,9 +229,7 @@ body {
         <div class="container">
             <a class="navbar-brand" href="index.html" style="color: olive;">sunilchoppala@live.com</a>
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu" style="color: blue;"></span> Menu
             </button>
-
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav nav ml-auto">
                     <li class="nav-item"><a href="#home-section" class="nav-link" style="color: olive;"><span>Home</span></a></li>
@@ -159,7 +254,7 @@ body {
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3" style="color: #474747;">I'm <span style="color: #808000;">Sunil Choppale</span></h1>
+			            <h1 class="mb-4 mt-3 boxed-heading" style="color: #474747;">I'm <span style="color: #808000;">Sunil Choppale</span></h1>
 
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
@@ -199,10 +294,10 @@ body {
 
 						<br>
 						<br>
-			            <h2><span style="color: #808000;">A Data Analyst</span></h2>
+			            <h2><span style="color: #808000;"> Data Analyst</span></h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
+			            <!-- <p><a href="#" class="btn btn-primary py-3 px-4">YouTube</a>  -->
 							<a href="https://github.com/sunilchoppale" class="btn btn-outline-white py-3 px-4" style="background-color: #808000; color: #ffffff; border-color: #000000;">My works</a>
 
 		            </div>
@@ -280,7 +375,7 @@ body {
 							<div class="col-md-12 heading-section ftco-animate">
 								
 								<h1 class="big" style="color: #e3e9db;"> About</h1>
-								<h2 class="mb-4" style="color: #808000;"> About Me</h2>
+								<h2 class="mb-4 boxed-heading" style="color: #808000;"> About Me</h2>
 								
 								<p>With over 1 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
 									Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
@@ -305,7 +400,7 @@ body {
 									<span class="number" data-number="07">0</span> <span style="color: #808000;">+</span>
 									<span style="color: #808000;">&nbsp; Projects completed</span>
 								</p>
-								<p><a href="https://www.linkedin.com/in/sunilchoppale/" class="btn btn-primary py-3 px-3" style="background-color: #808000; color: #ffffff; border-color: #000000;"> LinkedIn </a></p> 					</div>
+								<p><a href="https://www.linkedin.com/in/sunilchoppale/" class="btn btn-primary py-4 px-5" class="btn btn-outline-white py-3 px-4" style="background-color: #a3b68a; color: #ffffff; border-color: #000000;"> LinkedIn </a></p> 	</div>
 						</div>
 					</div>
 				</div>
@@ -321,7 +416,7 @@ body {
     		<div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2" style="color: #e3e9db;">Resume</h1>
-            <h2 class="mb-4" style="color: #808000;">Resume</h2>
+            <h2 class="mb-4 boxed-heading" style="color: #808000;">Resume</h2>
             <p>Seasoned Data Analyst with a Master's in Data Science and Business Analytics, skilled in leveraging extensive expertise in statistical analysis, machine learning algorithms, and project management to drive business strategies through data-driven insights. Proficient in Python, R, SQL, Tableau, and Power BI, with a track record of transforming complex data into actionable solutions that enhance operational efficiency and profitability.</p>
           </div>
         </div>
@@ -336,7 +431,7 @@ body {
 				<div class="col-md-6" >
 					<div class="resume-wrap ftco-animate" style="background-color: #b8b88aa8; padding: 20px; border-radius: 5px;">
 						<span class="date">2024-Present</span>
-						<h2>Research Analyst Intern</h2>
+						<h2 class="boxed-heading">Research Analyst Intern</h2>
 						<span class="position">Hydrostar Euro LTD</span>
 						<p class="mt-4">HydroStar Europe leverages advanced data analytics to optimize Green Hydrogen production, ensuring cost-efficiency and sustainability.
 							<ul>
@@ -352,7 +447,7 @@ body {
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate" style="background-color: #b8b88aa8; padding: 20px; border-radius: 5px;">
 						<span class="date">2022-2023</span>
-						<h2>Dessertaion Project</h2>
+						<h2 class="boxed-heading">Dessertaion Project</h2>
 						<span class="position">University of Plymouth</span>
 						<p class="mt-4">The Impact of Working Capital Management on Firm Performance in The European Hospitality and Tourism Industry. 
 							<ul>
@@ -379,7 +474,7 @@ body {
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate" style="background-color: #b8b88aa8;; padding: 20px; border-radius: 5px;">
     					<span class="date">2022-2023</span>
-    					<h2>Masters in Data Science and Business Analytics</h2>
+    					<h2 class="boxed-heading">Masters in Data Science and Business Analytics</h2>
     					<span class="position">University Of Plymouth</span>
     					<p class="mt-4">Grade: 2:1</p>
     				</div>
@@ -388,7 +483,7 @@ body {
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate" style="background-color: #b8b88aa8;; padding: 20px; border-radius: 5px;">
     					<span class="date">2019-2022</span>
-    					<h2>Bachelore In Commerce (Market Research)</h2>
+    					<h2 class="boxed-heading">Bachelore In Commerce (Market Research)</h2>
     					<span class="position">University Of Mumbai</span>
     					<p class="mt-4">Grade: 74.10%</p>
     				</div>
@@ -410,7 +505,7 @@ body {
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2" style="color: #cbd4be;">Projects</h1>
-            <h2 class="mb-4" style="color: #808000;">Projects</h2>
+            <h2 class="mb-4 boxed-heading" style="color: #808000;">Projects</h2>
             <p>Below are the sample Data Analytics projects on SQL, Python, and  Power BI </p>
           </div>
         </div>
@@ -455,11 +550,11 @@ body {
 		<div class="row d-flex justify-content-center">  
 			<!-- <div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <h3 class="heading"><a href="#">Sales Forecast- Time Series Forecasting</a></h3>
 				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
 				</div>
 			  </div>
@@ -470,7 +565,7 @@ body {
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href=https://github.com/sunilchoppale/-Water-Pollution-data-SQL-Python-Tablue">Water Pollution data Tablue, SQL, Python</a></h3>
+				  <h3 class="heading"><a href="https://github.com/sunilchoppale/-Water-Pollution-data-SQL-Python-Tablue">Water Pollution data Tablue, SQL, Python</a></h3>
 				  <p>Developed a report using Python, SQL, and Tablue to analyse water pollution across England's cities. </p>
 				</div>
 			  </div>
@@ -491,7 +586,7 @@ body {
     </section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
+      <!-- <div class="container">
 		<div class="row d-md-flex align-items-center">
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
@@ -526,20 +621,21 @@ body {
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 	
 	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
+			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<h2 class="boxed-heading">More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4 class="boxed-heading"> I enjoy turning business challenges into opportunities through insightful data exploration.</h4>
 						<br>
-						<p><a href="https://github.com/sunilchoppale" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						<p><a href="https://github.com/sunilchoppale/" class="btn btn-primary py-4 px-5" class="btn btn-outline-white py-3 px-4" style="background-color: #a3b68a; color: #ffffff; border-color: #000000;">GitHub</a></p>
+						</br>
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
+			</div>
 		</div>
 	</section>
 
@@ -550,7 +646,7 @@ body {
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2" style="color: #cbd4be;">Contact</h1>
-            <h2 class="mb-4" style="color: #808000;">Contact Me</h2>
+            <h2 class="boxed-heading" style="color: #808000;">Contact Me</h2>
             <p>Below are the details to reach out to me!</p>
           </div>
         </div>
@@ -561,7 +657,7 @@ body {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-map-signs"></span>
           		</div>
-          		<h3 class="mb-4">Address</h3>
+          		<h3 class="boxed-heading">Address</h3>
 	            <p> Plymouth, United Kingdom</p>
 	          </div>
           </div>
@@ -570,8 +666,8 @@ body {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-phone2"></span>
           		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+44 07570318457</a></p>
+          		<h3 class="boxed-heading">Contact Number</h3>
+	            <p><a href="tel://0101010101" style="color: olive;">+44 07570318457</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -579,8 +675,8 @@ body {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-paper-plane"></span>
           		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">sunilchoppala@live.com</a></p>
+          		<h3 class="boxed-heading">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com" style="color: olive;">sunilchoppala@live.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -588,8 +684,8 @@ body {
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
+          		<h3 class="boxed-heading" >Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1NffSUUdI42XL4vsrsOfjbWiBzfnbB9NT/view?usp=drive_link" style="color: olive;">resumelink</a></p>
 	          </div>
           </div>
 
@@ -601,37 +697,21 @@ body {
 					<!-- <h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2> -->
 				</div>
 			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sunilchoppale"><span class="icon-linkedin"></span></a></li>  
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
-				      <li class="ftco-animate"><a href="https://www.instagram.com/sunil_choppala/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
+		</div>
    </div>
  </section>
 
-
+ <footer class="footer-olive">
+	<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+		<li class="ftco-animate normal-txt">Find me on  </li>
+		<!-- <li class="ftco-animate"><a href=#"><span class="icon-youtube"></span></a></li> -->
+		<li class="ftco-animate"><a href="https://www.linkedin.com/in/sunilchoppale"><span class="icon-linkedin"></span></a></li>  
+		<!-- <li class="ftco-animate"><a href=#><span class="icon-twitter"></span></a></li> -->
+		<!-- <li class="ftco-animate"><a href=#><span class="icon-facebook"></span></a></li> -->
+		<li class="ftco-animate"><a href="https://www.instagram.com/sunil_choppala/"><span class="icon-instagram"></span></a></li>
+	  </ul>
+  </footer>
  
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
-
-
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
